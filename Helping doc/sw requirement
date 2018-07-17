@@ -1,0 +1,10 @@
+sw requirement
+
+ruby 2.5.1
+rails 3.2.22.5
+mysql 5.7
+memcached
+redis
+
+background job processing
+sidekiq
