@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(:version => 20180718070840) do
   add_index "people", ["mobile"], :name => "people_mobile_key", :unique => true
 
   create_table "products", :primary_key => "product_id", :force => true do |t|
-    t.integer  "sellar_Id",    :null => false
+    t.integer  "sellar_id",    :null => false
     t.string   "product_no",   :null => false
     t.string   "product_name", :null => false
     t.text     "description"
@@ -79,7 +79,7 @@ ActiveRecord::Schema.define(:version => 20180718070840) do
     t.datetime "updated_at",   :null => false
   end
 
-  add_index "products", ["sellar_Id"], :name => "fk_products_sellars"
+  add_index "products", ["sellar_id"], :name => "fk_products_sellars"
 
   create_table "sellars", :primary_key => "sellar_id", :force => true do |t|
     t.integer  "person_id",  :null => false
