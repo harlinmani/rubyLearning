@@ -4,13 +4,13 @@ Login (username,password,personId) belongs_to Person
 
 Person(Name, mobile,email) has_one Login, has_many address, has_many Buyer
 
-Seller(person_Id, adress_Id) belangs_to person, belongs_to address, has_many product
+Sellar(person_Id, adress_Id) belangs_to person, belongs_to address, has_many product
 
 Buyer(personId, product_Id,address_Id) belangs_to person, belongs_to address, belongs_to product
 
 Address(personId, Adress) belongs_to person
 
-Product(seller_id, productName, Description) belongs_to Seller
+Product(sellar_id, productName, Description) belongs_to Sellar
 
 TrackShipping(dispacherId, Status, description) belongs_to Dispacher
 

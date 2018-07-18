@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  sellar_id: 1
   person_id: 1
-  name: 
-  mobile: 
-  email: MyString
+  address_id: 1
 
 two:
+  sellar_id: 1
   person_id: 1
-  name: 
-  mobile: 
-  email: MyString
+  address_id: 1
